@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Al-Tamoor Goods - Premium Global Logistics & Supply Chain Solutions. Air, Sea, Road Freight & Warehousing.">
+    <title>Al-Tamoor Goods | Global Logistics & Freight Forwarding</title>
+
+    <!-- Fonts: Montserrat & Outfit (Modern) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Leaflet CSS for Custom Map Marker -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <!-- Mega Menu Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Al-Tamoor Goods" style="height: 50px;"></a>
+
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="primary-navigation">
+                <ul class="nav-list" style="position:relative;">
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+
+                    <li><a href="#about-us" class="nav-link">About Us</a></li>
+
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+
+                    <li class="mobile-action-link"><a href="https://wa.me/923214676707" target="_blank" class="nav-link support-btn"><i class="fa-brands fa-whatsapp"></i> 24/7 Support</a></li>
+                    <li class="mobile-action-link"><a href="quote.html" class="nav-link btn-nav">Get a Quote</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions desktop-actions">
+                <a href="https://wa.me/923214676707" target="_blank" class="nav-link support-btn"
+                    style="font-weight: 600; display: flex; align-items: center;"><i
+                        class="fa-brands fa-whatsapp" style="font-size: 1.2rem; margin-right: 5px;"></i> 24/7
+                    Support</a>
+                <a href="quote.html" class="nav-link btn-nav">Get a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Enterprise Messaging -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <!-- Text Content -->
+            <div class="hero-text">
+                <h1 class="fade-in-up">Resilient Supply Chains for a Complex World</h1>
+                <p class="fade-in-up delay-1">End-to-end logistics solutions powered by data, designed for
+                    sustainability, and delivered with precision.</p>
+                <div class="hero-cta fade-in-up delay-2">
+                    <a href="quote.html" class="btn btn-primary">Start Shipping</a>
+                    <a href="#contact" class="btn btn-secondary">Talk to Sales</a>
+                </div>
+            </div>
+
+            <!-- Interactive Tracking Widget REMOVED -->
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Logistics Capabilities</h2>
+                <p class="section-desc">Select a service to explore our integrated logistics solutions.</p>
+            </div>
+
+            <!-- Master-Detail Layout -->
+            <div id="services-container" class="services-layout">
+                <!-- Left Pane: Navigation Menu -->
+                <div id="services-menu" class="services-menu">
+                    <!-- Dynamic Buttons Injected Here -->
+                </div>
+
+                <!-- Right Pane: Content Display -->
+                <article id="service-display" class="service-display">
+                    <!-- Dynamic Content Injected via Script -->
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="section" style="background-color: var(--color-bg-light);">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-desc" style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                    Al-Tamoor Goods is a premier global logistics provider dedicated to delivering innovative, reliable,
+                    and efficient supply chain solutions. With industry expertise, we empower businesses by bridging
+                    geographical gaps and ensuring seamless movement of goods across the globe. Our commitment to
+                    excellence and customer satisfaction makes us your trusted partner in logistics.
+                </p>
+            </div>
+
+            <div class="about-grid scroll-reveal"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>To provide unparalleled logistics services that drive growth for our clients through innovation,
+                        efficiency, and a relentless focus on customer success.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-solid fa-gem"></i></div>
+                    <h3>Our Values</h3>
+                    <p>Integrity, reliability, and continuous improvement form the core of everything we do. We build
+                        lasting partnerships based on trust and mutual respect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO's Message Section -->
+    <section id="ceo-message" class="section" style="background-color: var(--color-white);">
+        <div class="container">
+            <div class="ceo-layout scroll-reveal">
+                <div class="ceo-image">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="CEO Portrait">
+                </div>
+                <div class="ceo-content">
+                    <h2 class="section-title" style="text-align: left;">Message from the CEO</h2>
+                    <blockquote class="ceo-quote">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>At Al-Tamoor Goods, we believe that logistics is more than just moving freight. Itâ€™s about
+                            building resilient, adaptable supply chains that empower businesses to thrive in a complex
+                            global market. Our commitment to precision, data-driven solutions, and unwavering customer
+                            support remains the cornerstone of our success.</p>
+                        <footer>
+                            <strong>Muhammad Ali</strong><br>
+                            <span style="color:var(--color-text-light);">Chief Executive Officer, Al-Tamoor Goods</span>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Core Values -->
+    <section id="core-values" class="core-values section" style="background-color: var(--color-bg-light);">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <p class="section-subtitle"
+                    style="text-transform: uppercase; letter-spacing: 2px; color: var(--color-secondary); font-size: 0.85rem; font-weight: 700; margin-bottom: 10px;">
+                    What Drives Us</p>
+                <h2 class="section-title">Our Core Values</h2>
+            </div>
+
+            <div class="values-grid scroll-reveal">
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-regular fa-circle-check"></i></div>
+                    <h3>Reliability</h3>
+                    <p>Every commitment we make is backed by systems, people, and processes designed to deliver â€”
+                        always.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h3>Speed</h3>
+                    <p>We optimize every step of the supply chain to get your cargo to its destination faster and safer.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-solid fa-user-group"></i></div>
+                    <h3>Partnership</h3>
+                    <p>We don't just move cargo â€” we build long-term relationships rooted in transparency and trust.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Excellence</h3>
+                    <p>From handling to documentation, we hold ourselves to the highest standards of logistics
+                        professionalism.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="our-team" class="section" style="background-color: var(--color-white);">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Meet Our Leadership</h2>
+                <p class="section-desc">The dedicated professionals driving our global logistics excellence.</p>
+            </div>
+
+            <div class="team-grid scroll-reveal" id="team-grid">
+                <div class="team-card" data-category="development" onclick="this.classList.toggle('show-details')">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Charles John">
+                    </div>
+                    <div class="team-info-group">
+                        <div class="team-header-box">
+                            <h3>Charles John</h3>
+                            <p>Technical Team Lead</p>
+                        </div>
+                        <div class="team-contact-info">
+                            <p><i class="fa-regular fa-envelope"></i> charles@altamoorgoods.com</p>
+                            <p><i class="fa-solid fa-phone"></i> 01714390222</p>
+                            <p><i class="fa-solid fa-mobile-screen"></i> 01714390222</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card" data-category="qa" onclick="this.classList.toggle('show-details')">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Cristna Martin">
+                    </div>
+                    <div class="team-info-group">
+                        <div class="team-header-box">
+                            <h3>Cristna Martin</h3>
+                            <p>UX / UI Designer</p>
+                        </div>
+                        <div class="team-contact-info">
+                            <p><i class="fa-regular fa-envelope"></i> cristna@altamoorgoods.com</p>
+                            <p><i class="fa-solid fa-phone"></i> 01714390222</p>
+                            <p><i class="fa-solid fa-mobile-screen"></i> 01714390222</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card" data-category="hr" onclick="this.classList.toggle('show-details')">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="David Manik">
+                    </div>
+                    <div class="team-info-group">
+                        <div class="team-header-box">
+                            <h3>David Manik</h3>
+                            <p>HR Manager</p>
+                        </div>
+                        <div class="team-contact-info">
+                            <p><i class="fa-regular fa-envelope"></i> david@altamoorgoods.com</p>
+                            <p><i class="fa-solid fa-phone"></i> 01714390222</p>
+                            <p><i class="fa-solid fa-mobile-screen"></i> 01714390222</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card" data-category="development" onclick="this.classList.toggle('show-details')">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Adam Rhys">
+                    </div>
+                    <div class="team-info-group">
+                        <div class="team-header-box">
+                            <h3>Adam Rhys</h3>
+                            <p>Apps Developer</p>
+                        </div>
+                        <div class="team-contact-info">
+                            <p><i class="fa-regular fa-envelope"></i> adam@altamoorgoods.com</p>
+                            <p><i class="fa-solid fa-phone"></i> 01714390222</p>
+                            <p><i class="fa-solid fa-mobile-screen"></i> 01714390222</p>
+                            <div class="team-socials">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Global Support & Offices</h2>
+                <p class="section-desc">Our expert teams are ready to assist you 24/7.</p>
+            </div>
+
+            <div class="multi-contact-layout scroll-reveal">
+                <!-- Left Pane: Offices -->
+                <div class="contact-offices">
+                    <div class="office-tabs">
+                        <button class="office-tab active" onclick="switchOffice('ravi')" id="tab-ravi">Ravi Road
+                            Office</button>
+                        <button class="office-tab" onclick="switchOffice('gulberg')" id="tab-gulberg">Gulberg
+                            Office</button>
+                    </div>
+                    <div class="map-container">
+                        <div id="office-map" style="width: 100%; height: 100%; border-radius: 12px; z-index: 1;"></div>
+                    </div>
+                    <div class="office-details-card">
+                        <h3 id="office-name">Ravi Road Office</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> <span id="office-address">General Truck Stand, Ravi
+                                link road, Lahore</span></p>
+                        <p><i class="fa-solid fa-phone"></i> <span id="office-phone">042-37723688</span></p>
+                        <p><i class="fa-solid fa-envelope"></i> <span id="office-email">ravi@altamoorgoods.com</span>
+                        </p>
+                        <p><i class="fa-regular fa-clock"></i> <span id="office-hours">Mon-Sat: 9:00 AM - 6:00 PM</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Pane: Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-grid-2">
+                            <div class="form-field">
+                                <label>Full Name *</label>
+                                <input type="text" placeholder="Ali Hassan" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Company</label>
+                                <input type="text" placeholder="ABC Exports Ltd.">
+                            </div>
+                        </div>
+                        <div class="form-grid-2">
+                            <div class="form-field">
+                                <label>Email *</label>
+                                <input type="email" placeholder="you@company.com" required>
+                            </div>
+                            <div class="form-field">
+                                <label>Phone</label>
+                                <input type="tel" placeholder="+92 300 000 0000">
+                            </div>
+                        </div>
+                        <div class="form-field" style="margin-bottom: 20px;">
+                            <label>Service Required</label>
+                            <select>
+                                <option>Select a service...</option>
+                                <option>Air Freight</option>
+                                <option>Sea Freight</option>
+                                <option>Road Transport</option>
+                                <option>Warehousing</option>
+                            </select>
+                        </div>
+                        <div class="form-field" style="margin-bottom: 20px;">
+                            <label>Message *</label>
+                            <textarea rows="4" placeholder="Describe your cargo requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block"
+                            style="padding: 16px; font-size: 1rem;">Send Message <i class="fa-solid fa-paper-plane"
+                                style="margin-left:8px;"></i></button>
+                        <p style="text-align:center; font-size: 0.8rem; color:#888; margin-top: 15px;">By submitting,
+                            you agree to our privacy policy. We respond within 2 business hours.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo" style="display:block; margin-bottom:20px;"><img src="logo.png"
+                        alt="Al-Tamoor Goods" style="height: 50px;"></a>
+                <p>Your trusted partner in global logistics. Delivering excellence across borders with speed and
+                    reliability.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#services" onclick="selectService(0)">Air Freight</a></li>
+                    <li><a href="#services" onclick="selectService(1)">Sea Freight</a></li>
+                    <li><a href="#services" onclick="selectService(2)">Road Transport</a></li>
+                    <li><a href="#services" onclick="selectService(3)">Planning</a></li>
+                    <li><a href="#services" onclick="selectService(4)">List Delivery</a></li>
+                    <li><a href="#services" onclick="selectService(5)">Inventory</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                      <li><a href="#hero">Home</a></li>
+                      <li><a href="#about-us">About Us</a></li>
+                      <li><a href="quote.html">Get a Quote</a></li>
+                      <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                  <p>&copy; <span id="current-year">2026</span> Al-Tamoor Goods. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

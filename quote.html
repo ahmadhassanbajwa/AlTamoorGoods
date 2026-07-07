@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Quote | Al-Tamoor Goods</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body class="quote-page-body">
+
+    <header class="tool-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Al-Tamoor Goods" style="height: 40px;"></a>
+            <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </header>
+
+    <div class="container section">
+        <div class="wizard-container">
+            <div class="wizard-header">
+                <h1>Smart Quote Request</h1>
+                <p>Complete the steps below to get a tailored logistics solution.</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="wizard-progress">
+                <div class="step-indicator active" data-step="1">
+                    <span class="step-num">1</span>
+                    <span class="step-label">Route</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-indicator" data-step="2">
+                    <span class="step-num">2</span>
+                    <span class="step-label">Cargo</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-indicator" data-step="3">
+                    <span class="step-num">3</span>
+                    <span class="step-label">Details</span>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-indicator" data-step="4">
+                    <span class="step-num">4</span>
+                    <span class="step-label">Finish</span>
+                </div>
+            </div>
+
+            <!-- Wizard Form -->
+            <form id="wizard-form">
+
+                <!-- Step 1: Route -->
+                <div class="wizard-step active" id="step-1">
+                    <h3>Where are we shipping?</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Origin Country / City</label>
+                            <input type="text" name="origin" placeholder="Ex: Shanghai, China">
+                        </div>
+                        <div class="form-group">
+                            <label>Destination Country / City</label>
+                            <input type="text" name="destination" placeholder="Ex: Lahore, Pakistan">
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Preferred Transport Mode</label>
+                            <div class="radio-group">
+                                <label class="radio-card">
+                                    <input type="radio" name="mode" value="air" checked>
+                                    <i class="fa-solid fa-plane"></i> Air
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="mode" value="sea">
+                                    <i class="fa-solid fa-ship"></i> Sea
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="mode" value="road">
+                                    <i class="fa-solid fa-truck"></i> Road
+                                </label>
+                                <label class="radio-card">
+                                    <input type="radio" name="mode" value="rail">
+                                    <i class="fa-solid fa-train"></i> Railway
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Cargo -->
+                <div class="wizard-step" id="step-2">
+                    <h3>Cargo Properties</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Total Weight (kg)</label>
+                            <input type="number" name="weight" placeholder="0.00">
+                        </div>
+                        <div class="form-group">
+                            <label>Total Volume (cbm)</label>
+                            <input type="number" name="volume" placeholder="0.00">
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Commodity Type</label>
+                            <input type="text" name="commodity"
+                                placeholder="E.g. Electronics, Perishables, Machinery...">
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Dimensions</label>
+                            <input type="text" name="dims" placeholder="L x W x H cm">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Details & Contact -->
+                <div class="wizard-step" id="step-3">
+                    <h3>Contact Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Person</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Additional Instructions</label>
+                            <textarea name="message" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Success Message (Hidden primarily, shown by JS) -->
+                <div class="wizard-step" id="step-4">
+                    <div class="success-message">
+                        <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+                        <h2>Quote Request Sent!</h2>
+                        <p>Our team is analyzing your route. You will receive a detailed proposal via email within 24
+                            hours.</p>
+                        <a href="index.html" class="btn btn-primary">Return to Home</a>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="wizard-footer">
+                    <button type="button" class="btn btn-secondary" id="prev-btn" style="display:none;">Back</button>
+                    <button type="button" class="btn btn-primary" id="next-btn">Next Step</button>
+                    <button type="submit" class="btn btn-primary" id="submit-btn" style="display:none;">Submit
+                        Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
