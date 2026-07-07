@@ -2711,3 +2711,51 @@ body {
 .support-btn:hover {
     color: #25D366 !important;
 }
+
+/* Fixes for mobile layout */
+.mobile-whatsapp-btn {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .nav-list {
+        margin-left: 0 !important;
+    }
+    .mobile-whatsapp-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        transform: translateY(-50%);
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .radio-group {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+        gap: 10px;
+    }
+    .radio-card {
+        flex: 0 0 90px;
+        padding: 10px 5px;
+        font-size: 0.85rem;
+    }
+    .radio-card i {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .form-grid {
+        gap: 15px;
+    }
+    .wizard-container {
+        padding: 15px;
+    }
+}
