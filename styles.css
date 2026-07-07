@@ -558,9 +558,12 @@ button {
     }
 
     .btn-nav {
-        width: 80%;
+        width: max-content !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
         text-align: center;
-        margin: 10px auto 0;
+        margin: 10px auto 0 !important;
+        white-space: nowrap !important;
     }
 
     /* Hero Section */
@@ -2722,8 +2725,9 @@ body {
         margin-left: 0 !important;
     }
     .mobile-action-link {
-        width: 100%;
-        text-align: center;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
     }
     .mobile-whatsapp-btn {
         display: flex;
@@ -2771,3 +2775,4 @@ body {
         overflow: hidden;
     }
 }
+   
