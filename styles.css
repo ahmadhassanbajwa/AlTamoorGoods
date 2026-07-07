@@ -2742,6 +2742,11 @@ body {
         -webkit-overflow-scrolling: touch;
         padding-bottom: 10px;
         gap: 10px;
+        width: 100%;
+    }
+    .form-group.full-width {
+        min-width: 0;
+        max-width: 100%;
     }
     .radio-card {
         flex: 0 0 90px;
@@ -2754,8 +2759,11 @@ body {
     }
     .form-grid {
         gap: 15px;
+        min-width: 0;
     }
     .wizard-container {
         padding: 15px;
+        max-width: 100vw;
+        overflow: hidden;
     }
 }
